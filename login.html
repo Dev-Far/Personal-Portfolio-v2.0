@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="stylesheet" href="nav.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+  html{
+    font-family: "Poppins", sans-serif;
+    background: black;
+
+  }
+   nav{
+z-index: 100;
+  }
+  .h-logo{
+    z-index: 200;
+  }
+  article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+          transition: 5s ease-in-out;
+
+  }
+    .main{
+      width: 90%;
+      height: 450px;
+      background: #FFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 12px;
+      transition: 500ms ease-in-out;
+    }
+    .main:hover{
+      background: linear-gradient(to right, aqua, violet);
+      scale: 102%;
+    }
+    .log-fill{
+      margin: 3% 5%;
+      width: 78%;
+      border: 1px solid black;
+      border-radius: 9px;
+      height: 40px;
+      font-size: 18px;
+      padding: 0;
+      font-weight: 600;
+      color: black;
+      opacity: 50%;
+    }
+    #username{
+      padding: 0px 20px;
+      z-index: -1;
+    }
+    #password{
+      padding: 0px 20px;
+      z-index: -1;
+    }
+    .head{
+      font-size: 42px;
+      color: linen;
+      font-weight: 800;
+    }
+    #btn-sub{
+      width: 50%;
+      height: 35px;
+      display: block;
+      margin: 10px auto;
+      border-radius: 8px;
+      border: 0px solid white;
+      background: linear-gradient(to left, violet, #516EFF);
+      font-size: 19px;
+      font-weight: 800;
+      transition: 500ms ease-in-out;
+    }
+    #btn-sub:hover{
+      background: black;
+      scale: 110%;
+      color: linen;
+    }
+    #frgt-psd{
+      display: inline;
+      text-decoration: none;
+      color: blue;
+    }
+
+    #sign-up-btn{
+      display: inline;
+      text-decoration: none;
+      color: blue;
+    }
+    
+    #username::-webkit-input-placeholder, #password::-webkit-input-placeholder {
+      color: #00053D;
+      font-size: 20px;
+      opacity: 100%;
+      font-size: 16pt;
+      font-family: "Poppins", sans-serif;
+    }
+    
+    .nav-sign{
+      margin-top: -17px;
+      margin-left: 40px;
+    }
+    #frgt-psd:hover, #sign-up-btn:hover {
+      text-decoration: underline;
+      color: #120072;
+    }
+    @media (max-width: 450px){
+      .nav-sign{
+        margin-top: -8px;
+        margin-left: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+      <nav>
+  
+
+  
+    <label for="sidebar-active" class="open-sidebar"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></label>
+ 
+  <input type="checkbox" id="sidebar-active"/>
+ 
+ <label for="sidebar-active" id="overlay"></label>
+ 
+ 
+    <div class="links-container">
+     
+    <label for="sidebar-active" class="close-sidebar"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></label>
+    
+  <a href="/index.html" id="home-link" class="home-link"><img src="/logo.jpg" alt="logo" width="60px" height="60px"></a>
+  
+    <a href="/products">Products</a>
+    <a href="/about.html">About</a>
+    <a href="/blogs.html">Blogs</a>
+    <a href="/login.html">Get Started</a>
+    </div>
+    
+  </nav>
+        <a href="/index.html" id="logo" class="h-logo"><img src="/logo.jpg" alt="logo" width="50px" height="50px"  class="h-logo"></a>
+  </header>
+  
+  <!-- nav end-->
+  
+  <article>
+
+  <div class="head">
+    <h1>LOGIN</h1>
+  </div>
+<div class="main">
+  <img src="/toplogo.png" alt="top" width="150px" height="150px">
+  <form action="/index.html">
+  <input type="text" class="log-fill" id="username" placeholder="Enter Username">
+  <input type="password" class="log-fill" id="password" placeholder="Enter Password">
+<!--  <a href="#" id="frgt-psd" class="btn-lgn">Forgot Password?</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+  <span id="sandw">or</span>
+  <a href="sign-up.html" id="sign-up-btn" class="btn-lgn">Sign Up</a>-->
+  <p class="nav-sign"><a href="#" id="frgt-psd">Forgot Password?</a> or <a href="#" id="sign-up-btn">Create New</a></p>
+  <button type="submit" id="btn-sub">Log In</button>
+  </form>
+</div>
+  </article>
+  <br>
+  <br>
+  <br>
+  
+</body>
+
+</html>
